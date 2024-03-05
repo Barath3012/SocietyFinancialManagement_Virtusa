@@ -1,3 +1,5 @@
 <!-- app.component.html -->
 <input type="text" [(ngModel)]="textInput" placeholder="Enter text here">
 <p>You entered: {{ textInput }}</p>
+<li *ngFor="let item of fam; index as i;">Name:{{item.Name}} Rent:{{item.Rent}}</li>           
+

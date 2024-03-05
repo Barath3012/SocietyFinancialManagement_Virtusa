@@ -1,0 +1,24 @@
+[
+
+    {
+        "id" : "Fam1",
+                    "Name":"A",
+            "Members":16,
+            "Rent":1000
+        
+    },
+    {
+        "id":"Fam2",
+            "Name":"B",
+            "Members":12,
+            "Rent":1000
+        
+    },
+    {
+       "id": "Fam3",
+            "Name":"C",
+            "Members":10,
+            "Rent":213
+        
+    }
+]
