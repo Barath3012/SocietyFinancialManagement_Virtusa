@@ -1,9 +1,47 @@
 <!-- app.component.html -->
-<div>
-  <input type="number" [(ngModel)]="numberOfTimes" placeholder="Enter a number">
-  <button (click)="generateHelloWorlds()">Generate Hello World</button>
-</div>
+<input type="text" [(ngModel)]="textInput" placeholder="Enter text here">
+<p>You entered: {{ textInput }}</p>
+<li *ngFor="let item of fam; index as i;">Name:{{item.Name}} Rent:{{item.Rent}}</li>                  
 
-<div *ngFor="let hello of helloArray">
-  <p>{{ hello }}</p>
-</div>
+
+<head> 
+  <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+<table>
+    <tr>
+        <th>Property</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>{{ item.Name }}</td>
+    </tr>
+    <tr>
+        <td>Members</td>
+        <td>{{ item.Members }}</td>
+    </tr>
+    <tr>
+      <td>Telephone</td>
+      <td>{{ item.Telephone }}</td>
+  </tr>
+    <tr>
+        <td>Car Park</td>
+        <td>{{ item.CarPark }}</td>
+    </tr>
+    <tr>
+        <td>Rent</td>
+        <td>{{ item.Rent }}</td>
+    </tr>
+</table>

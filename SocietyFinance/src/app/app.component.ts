@@ -1,22 +1,28 @@
-// app.component.ts
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common'
+import { CommonModule } from '@angular/common';
+import fam from './data.json' ;
+
+
+interface Family{
+  id: string,
+  Name: string;
+  Members: number;
+  Rent: number;
+  Telephone: number;
+  CarParking: number;
+}
+console.log(fam);
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  imports:[FormsModule,CommonModule],
   standalone: true,
-  imports: [
-    CommonModule, FormsModule // <<<< And here
-  ],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-
 export class AppComponent {
-  numberOfTimes: number = 0;
-  helloArray: string[] = [];
-
-  generateHelloWorlds() {
-    this.helloArray = new Array(this.numberOfTimes).fill("Hello World");
-  }
+  textInput: string = '';
+  fam: Family[] = fam;
 }
+
+
