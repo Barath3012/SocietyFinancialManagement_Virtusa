@@ -1,0 +1,9 @@
+<!-- app.component.html -->
+<div>
+  <input type="number" [(ngModel)]="numberOfTimes" placeholder="Enter a number">
+  <button (click)="generateHelloWorlds()">Generate Hello World</button>
+</div>
+
+<div *ngFor="let hello of helloArray">
+  <p>{{ hello }}</p>
+</div>
