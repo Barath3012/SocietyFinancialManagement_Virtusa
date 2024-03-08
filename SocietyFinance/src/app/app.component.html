@@ -1,23 +1,44 @@
-<div *ngIf="rooms">
-    <h2>Available Rooms</h2>
-    <ul>
-      <li *ngFor="let room of rooms">
-        <h3>{{ room.name }}</h3>
-        <p>{{ room.description }}</p>
-        <p>Capacity: {{ room.capacity }}</p>
-        <p>Price per Night: {{ room.price_per_night }}</p>
-      </li>
-    </ul>
-  </div>
-  
-  <div *ngIf="carParking">
-    <h2>Car Parking</h2>
-    <p *ngIf="carParking.available; else noParking">Available with a daily fee of {{ carParking.daily_fee }}</p>
-    <ng-template #noParking>Car parking is not available</ng-template>
-  </div>
-  
-  <div *ngIf="rent">
-    <h2>Rent</h2>
-    <p>Monthly Rate: {{ rent.monthly_rate }}</p>
-  </div>
-  
+
+<!-- app.component.html -->
+<input type="text" [(ngModel)]="textInput" placeholder="Enter text here">
+<p>You entered: {{ textInput }}</p>
+<li *ngFor="let item of fam; index as i;">Name:{{item.Name}} Rent:{{item.Rent}}</li>                   
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+<table > 
+    <tr> 
+        <td>
+            <h1>Name</h1>
+        </td>
+        <td>
+            <h1> Members</h1>
+        </td>
+        <td> 
+            <h1> Rent </h1>
+        </td>
+    </tr>
+    <tr *ngFor="let item of fam;">
+        <td>
+            <p>{{item.Name}}</p>
+        </td>
+        <td> 
+            <p>{{item.Members}}</p>
+        </td>
+        <td> 
+            <p>{{item.Rent}}</p>
+        </td>
+    </tr>
+</table>
