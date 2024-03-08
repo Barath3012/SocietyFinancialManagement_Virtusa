@@ -1,0 +1,33 @@
+{
+    "rooms": [
+      {
+        "id": 1,
+        "name": "Standard Room",
+        "description": "A cozy standard room with basic amenities.",
+        "capacity": 2,
+        "price_per_night": 50
+      },
+      {
+        "id": 2,
+        "name": "Deluxe Room",
+        "description": "A spacious deluxe room with modern amenities.",
+        "capacity": 3,
+        "price_per_night": 80
+      },
+      {
+        "id": 3,
+        "name": "Suite",
+        "description": "An elegant suite with luxurious amenities and a beautiful view.",
+        "capacity": 4,
+        "price_per_night": 120
+      }
+    ],
+    "car_parking": {
+      "available": true,
+      "daily_fee": 10
+    },
+    "rent": {
+      "monthly_rate": 1000
+    }
+  }
+  
