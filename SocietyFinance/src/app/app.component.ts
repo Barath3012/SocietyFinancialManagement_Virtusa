@@ -6,11 +6,6 @@ import { CommonModule } from '@angular/common';
 import fam from './data.json';
 
 
-@Component({
-  selector: 'app-my-component',
-  templateUrl: 'C:\Users\Administrator\Documents\GitHub\SocietyFinancialManagement_Virtusa\SocietyFinance\src\app\my-component\my-component.component.html',
-  styleUrls: ['C:\Users\Administrator\Documents\GitHub\SocietyFinancialManagement_Virtusa\SocietyFinance\src\app\my-component\my-component.component.css']
-})
 export class MyComponentComponent {
   textInput: string = '';
 }
