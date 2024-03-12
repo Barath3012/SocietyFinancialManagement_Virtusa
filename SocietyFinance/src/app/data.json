@@ -5,27 +5,27 @@
         "id" : "Fam1",
             "Name":"A",
             "Members":16,
-            "CarParking":1,
-            "Telephone":1234567890,
-            "Rent":10000
+            "Carpark":"yes",
+            "Phonenumber":12345,
+            "Rent":1000
        
     },
     {
-        "id" : "Fam2",
-        "Name":"B",
-        "Members":16,
-        "CarParking":1,
-        "Telephone":1234567890,
-        "Rent":10000
+        "id":"Fam2",
+            "Name":"B",
+            "Members":12,
+            "Carpark":"yes",
+            "Phonenumber":34562,
+            "Rent":1000
        
     },
     {
-        "id" : "Fam3",
+       "id": "Fam3",
             "Name":"C",
-            "Members":16,
-            "CarParking":1,
-            "Telephone":1234567890,
-            "Rent":10000
+            "Members":10,
+            "Carpark":"yes",
+            "Phonenumber":67896,
+            "Rent":213
        
     }
 ]

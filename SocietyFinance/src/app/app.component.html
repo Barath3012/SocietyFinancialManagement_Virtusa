@@ -1,47 +1,52 @@
-<!-- app.component.html -->
-<input type="text" [(ngModel)]="textInput" placeholder="Enter text here">
-<p>You entered: {{ textInput }}</p>
-<li *ngFor="let item of fam; index as i;">Name:{{item.Name}} Rent:{{item.Rent}}</li>                  
 
-
-<head> 
-  <style>
+<div *ngFor="let item of fam; index as i;"></div>                  
+<style>
     table {
         border-collapse: collapse;
         width: 100%;
     }
     th, td {
         border: 1px solid black;
-        padding: 8px;
+        padding: 5px;
         text-align: left;
     }
     th {
         background-color: #f2f2f2;
     }
 </style>
-<table>
+<table >
     <tr>
-        <th>Property</th>
-        <th>Value</th>
+        <td>
+            <h1>Name</h1>
+        </td>
+        <td>
+            <h1> Members</h1>
+        </td>
+        <td>
+            <h1> Car park</h1>
+        </td>
+        <td>
+            <h1>Phone number</h1>
+        </td>
+        <td>
+            <h1>Rent</h1>
+        </td>
     </tr>
-    <tr>
-        <td>Name</td>
-        <td>{{ item.Name }}</td>
-    </tr>
-    <tr>
-        <td>Members</td>
-        <td>{{ item.Members }}</td>
-    </tr>
-    <tr>
-      <td>Telephone</td>
-      <td>{{ item.Telephone }}</td>
-  </tr>
-    <tr>
-        <td>Car Park</td>
-        <td>{{ item.CarPark }}</td>
-    </tr>
-    <tr>
-        <td>Rent</td>
-        <td>{{ item.Rent }}</td>
+    <tr *ngFor="let item of fam;">
+        <td>
+            <p>{{item.Name}}</p>
+        </td>
+        <td>
+            <p>{{item.Members}}</p>
+        </td>
+        <td>
+            <p>{{item.Carpark}}</p>
+        </td>
+        <td>
+            <p>{{item.Phonenumber}}</p>
+        </td>
+        <td>
+            <p>{{item.Rent}}</p>
+        </td>
     </tr>
 </table>

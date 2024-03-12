@@ -9,8 +9,8 @@ interface Family{
   Name: string;
   Members: number;
   Rent: number;
-  Telephone: number;
-  CarParking: number;
+  Carpark:string;
+  Phonenumber:number;
 }
 console.log(fam);
 @Component({
