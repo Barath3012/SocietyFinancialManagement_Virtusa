@@ -6,10 +6,6 @@ import { CommonModule } from '@angular/common';
 import fam from './data.json';
 
 
-export class MyComponentComponent {
-  textInput: string = '';
-}
-
 interface Family{
   id: string,
   Name: string;
